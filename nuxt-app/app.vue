@@ -96,9 +96,9 @@
     </div>
     <hr class="py-4" />
 
-    <div class="row text-center py-4">
-      <h2>Taste a bowl of Khao Soi</h2>
-      <div class="col-6">
+    <div class="row  py-4">
+      <h2 class="text-center">Taste a bowl of Khao Soi</h2>
+      <div class="col-12 col-lg-6 d-flex align-items-center ">
         <p>Khao Soi, an award-winning
           dish can be found in various
           places across town. It is a
@@ -113,10 +113,8 @@
           textures combine in a bowl,
           this dish is unforgettable.</p>
       </div>
-      <div class="col-6">
-        <div class="col-6"> <img class="img-fluid" src="assets/images/khaosoi.jpg" alt="" />
-
-        </div>
+      <div class="col-6 p-5">
+        <img class="img-fluid" src="assets/images/khaosoi.jpg" alt="" />
       </div>
     </div>
     <div class="row  py-4">
@@ -165,12 +163,15 @@
           <img class="img-fluid" src="assets/images/hotel-room.jpg" alt="" />
 
         </div>
-        <p class=" py-4">The 137 Pillars Hotel Chiang Mai was a home of the Boneo Trading
+        <p class=" py-4"> <a class="sa-link" href="https://137pillarshotels.com/en/chiangmai/">The 137 Pillars Hotel
+            Chiang Mai</a> was a home of the Boneo
+          Trading
           Company, from 1889 to 1958. This luxury property is today restored into a
           place for you to relax and enjoy a home-style residential concept
           surrounded by tropical gardens.</p>
       </div>
     </div>
+    <hr class="mb-5">
   </div>
 </template>
 
@@ -189,6 +190,8 @@ body {
 h1 {
   color: #544541;
   font-size: 55px;
+  font-family: "theSeasons";
+  font-style: italic;
 }
 
 hr {
