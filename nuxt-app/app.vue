@@ -43,7 +43,7 @@
       <div class="col-12">
         <img class="img-fluid" src="assets/images/hero-image.jpg" alt="" />
       </div>
-      <h1 class="col-12 text-center py-4">INSIDER'S GUIDE <br />
+      <h1 class="col-12 text-center py-4">INSIDERS GUIDE <br />
         to Chiang Mai, Thailand</h1>
       <p>The second biggest city in Thailand after Bangkok, but not as busy and
         crowded. The northern part of Thailand is pleasant to visit all year
