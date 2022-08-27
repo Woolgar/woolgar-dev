@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "bootstrap": "^5.2.0",
+    "nuxt-directus": "^2.4.0",
     "sass": "^1.54.4",
     "yarn": "^1.22.19"
   }
