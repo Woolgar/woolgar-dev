@@ -312,6 +312,9 @@ const { getItems } = useDirectusItems();
 const currentYear = new Date().getFullYear();
 
 const posts = await getItems({ collection: "articles" });
+
+// console.log(posts)
+
 // function menuToggle() {
 //   const navs = document.querySelector(".nav__items");
 //   navs.classList.toggle("nav__toggleShow");
@@ -385,7 +388,6 @@ const posts = await getItems({ collection: "articles" });
 //   };
 // }
 
-console.log(posts)
 </script>
 
 <style lang="scss">
