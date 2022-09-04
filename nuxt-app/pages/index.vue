@@ -116,10 +116,10 @@
                 <a class="mail-to" href="mailto:tobias@tobiasfaucette.com">tobias@tobiasfaucette.com</a>
               </p>
             </div>
-            <div class="about__resume">
+            <!-- <div class="about__resume">
               <a href="assets/cv-.pdf" target="_blank" class="about__resume__btn">
                 <i class="fas fa-download"></i>Download Resume</a>
-            </div>
+            </div> -->
           </div>
         </div>
       </div>
@@ -299,7 +299,7 @@
           Whether you have a question or just want to say hi, I'll try my best
           to get back to you!
         </p>
-        <a class="btn" href="mailto:tobias@woolgar.dk">Say Hello</a>
+        <a class="btn" href="mailto:tobias@tobiasfaucette.com">Say Hello</a>
       </div>
     </section>
     <Footer />
@@ -311,7 +311,15 @@ import Footer from '/components/Footer.vue'
 const { getItems } = useDirectusItems();
 const currentYear = new Date().getFullYear();
 
-const posts = await getItems({ collection: "articles" });
+const { pending, data: posts } = useLazyFetch(getItems({ collection: "articles" }))
+watch(posts, (newPosts) => {
+  // Because posts starts out null, you won't have access
+  // to its contents immediately, but you can watch it.
+})
+
+
+
+// const posts = await getItems({ collection: "articles" });
 
 // console.log(posts)
 
