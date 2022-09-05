@@ -49,13 +49,15 @@
               coder by day, gamer by night.
             </h3>
             <div class="social-links">
-              <a href="https://github.com/Woolgar" rel="noopener noreferrer" target="_blank">
+              <a href="https://github.com/Woolgar" aria-label="github" rel="noopener noreferrer" target="_blank">
                 <i class="fab fa-github"></i>
               </a>
-              <a href="https://www.linkedin.com/in/tobias-faucette/" rel="noopener noreferrer" target="_blank">
+              <a href="https://www.linkedin.com/in/tobias-faucette/" aria-label="Linkedin" rel="noopener noreferrer"
+                target="_blank">
                 <i class="fab fa-linkedin-in"> </i>
               </a>
-              <a href="https://www.instagram.com/tobiasfaucette/" rel="noopener noreferrer" target="_blank">
+              <a href="https://www.instagram.com/tobiasfaucette/" aria-label="instagram" rel="noopener noreferrer"
+                target="_blank">
                 <i class="fab fa-instagram"> </i>
               </a>
             </div>
@@ -67,17 +69,19 @@
     <div class="side__element">
       <ul class="side__socials">
         <li>
-          <a href="https://github.com/Woolgar" rel="noopener noreferrer" target="_blank">
+          <a href="https://github.com/Woolgar" aria-label="github" rel="noopener noreferrer" target="_blank">
             <i class="fab fa-github"></i>
           </a>
         </li>
         <li>
-          <a href="https://www.linkedin.com/in/tobias-faucette/" rel="noopener noreferrer" target="_blank">
+          <a href="https://www.linkedin.com/in/tobias-faucette/" aria-label="Linkedin" rel="noopener noreferrer"
+            target="_blank">
             <i class="fab fa-linkedin-in"> </i>
           </a>
         </li>
         <li>
-          <a href="https://www.instagram.com/tobiasfaucette/" rel="noopener noreferrer" target="_blank">
+          <a href="https://www.instagram.com/tobiasfaucette/" aria-label="instagram" rel="noopener noreferrer"
+            target="_blank">
             <i class="fab fa-instagram"> </i>
           </a>
         </li>
@@ -87,7 +91,7 @@
     <section class="section" id="about">
       <div class="about__row hidden">
         <div class="about__image">
-          <img src="assets/images/cv.jpg" alt="" />
+          <nuxt-img src="/cv.jpg" alt="Tobias Faucette" width="150" height="150"></nuxt-img>
         </div>
         <div class="about__content">
           <h2>About me</h2>
@@ -174,8 +178,8 @@
               <a href="https://netflix-clone-7cad3.web.app/" rel="noopener" target="_blank">
                 <div class="project__img__wrapper">
                   <div style="max-width: 700px; display: block">
-                    <img alt="" role="presentation" aria-hidden="true" src="assets/images/Netflix.png"
-                      style="max-width: 100%; display: block; position: static" />
+                    <nuxt-img src="/Netflix.png" width="580" height="325"
+                      style="max-width: 100%; display: block; position: static"></nuxt-img>
                   </div>
                 </div>
               </a>
@@ -280,8 +284,9 @@
               <a href="https://fir-32983.web.app/" rel="noopener" target="_blank">
                 <div class="project__img__wrapper">
                   <div style="max-width: 700px; display: block">
-                    <img alt="" role="presentation" src="/assets/images/amazon.png"
-                      style="max-width: 100%; display: block; position: static" />
+                    <nuxt-img src="/amazon.png" alt="amazon logo" width="580" height="325" role="presentation"
+                      style=" object-fit: cover; aspect-ratio: 16/ 9;">
+                    </nuxt-img>
                   </div>
                 </div>
               </a>
@@ -317,6 +322,16 @@ watch(posts, (newPosts) => {
   // to its contents immediately, but you can watch it.
 })
 
+
+useHead({
+    title: 'Web developer - Tobias Faucette',
+    htmlAttrs: {
+      lang: 'en'
+    },
+    meta:[
+{name: 'description', content: 'Tobias Faucette web developer portfolio'}
+  ]
+})
 
 
 // const posts = await getItems({ collection: "articles" });

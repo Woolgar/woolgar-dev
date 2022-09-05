@@ -613,7 +613,8 @@ footer {
   margin: 25px 0px 10px;
   padding: 0px;
   list-style: none;
-
+  -webkit-box-pack: end;
+  justify-content: flex-end;
   li {
     margin: 0px 20px 5px 0px;
     color: var(--light-slate);
@@ -628,8 +629,8 @@ footer {
 }
 
 .featured__project:nth-last-of-type(2n + 1) .project__tech__list {
-  -webkit-box-pack: end;
-  justify-content: flex-end;
+  -webkit-box-pack: start;
+  justify-content: flex-start;
 }
 
 .featured__project:nth-of-type(2n + 1) .project__links {
