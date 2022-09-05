@@ -178,7 +178,7 @@
               <a href="https://netflix-clone-7cad3.web.app/" rel="noopener" target="_blank">
                 <div class="project__img__wrapper">
                   <div style="max-width: 700px; display: block">
-                    <nuxt-img src="/Netflix.png" width="580" height="325"
+                    <nuxt-img src="/Netflix.png" alt="Netflix logo" width="580" height="325"
                       style="max-width: 100%; display: block; position: static"></nuxt-img>
                   </div>
                 </div>
@@ -316,11 +316,11 @@ import Footer from '/components/Footer.vue'
 const { getItems } = useDirectusItems();
 const currentYear = new Date().getFullYear();
 
-const { pending, data: posts } = useLazyFetch(getItems({ collection: "articles" }))
-watch(posts, (newPosts) => {
-  // Because posts starts out null, you won't have access
-  // to its contents immediately, but you can watch it.
-})
+// const { pending, data: posts } = useLazyFetch(getItems({ collection: "articles" }))
+// watch(posts, (newPosts) => {
+//   // Because posts starts out null, you won't have access
+//   // to its contents immediately, but you can watch it.
+// })
 
 
 useHead({
