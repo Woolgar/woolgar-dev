@@ -7,6 +7,9 @@ export default defineNuxtConfig({
 	head:{
 	link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
 },
+  image: {
+    provider: 'netlify',
+  },
 	directus: {
 		url: "https://x6fsjrv2.directus.app",
 	},
