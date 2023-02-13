@@ -313,7 +313,7 @@
 </template>
 <script setup>
 import Footer from '/components/Footer.vue'
-const { getItems } = useDirectusItems();
+// const { getItems } = useDirectusItems();
 const currentYear = new Date().getFullYear();
 
 // const { pending, data: posts } = useLazyFetch(getItems({ collection: "articles" }))
@@ -324,12 +324,12 @@ const currentYear = new Date().getFullYear();
 
 
 useHead({
-    title: 'Web developer - Tobias Faucette',
-    htmlAttrs: {
-      lang: 'en'
-    },
-    meta:[
-{name: 'description', content: 'Tobias Faucette web developer portfolio'}
+  title: 'Web developer - Tobias Faucette',
+  htmlAttrs: {
+    lang: 'en'
+  },
+  meta: [
+    { name: 'description', content: 'Tobias Faucette web developer portfolio' }
   ]
 })
 
