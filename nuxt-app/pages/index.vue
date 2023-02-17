@@ -91,7 +91,8 @@
     <section class="section" id="about">
       <div class="about__row hidden">
         <div class="about__image">
-          <nuxt-img src="/cv.jpg" alt="Tobias Faucette" width="150" height="150"></nuxt-img>
+          <nuxt-img src="/cv.jpg" alt="Tobias Faucette portrait" format="webp" width="150" height="150"
+            loading="lazy"></nuxt-img>
         </div>
         <div class="about__content">
           <h2>About me</h2>
