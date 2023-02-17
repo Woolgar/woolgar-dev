@@ -2,13 +2,12 @@
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
 export default defineNuxtConfig({
 	css: ["@/assets/main.scss"],
-	modules: ["nuxt-directus", '@nuxt/image-edge',],
+	modules: ["nuxt-directus", '@nuxt/image-edge', '@vueuse/nuxt',],
 	app: {
 		head: {
 			link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
 		},
 	},
-
 	image: {
 		provider: 'netlify',
 	},

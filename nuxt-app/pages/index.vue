@@ -132,112 +132,62 @@
     <section id="projects" class="">
       <div class="section__wrapper">
         <h2 class="section__heading">Things I'm building</h2>
-        <ul class="featured__projectGrid">
-          <li class="featured__project hidden">
-            <div class="project__content">
-              <div>
-                <p class="project__overline">Featured Project</p>
-                <h3 class="project__title">Netflix Clone</h3>
-                <div class="project__description">
-                  <p>
-                    Clone based on Netflix ui, taking advantage of TMDB api,
-                    google firebase & react. soon to feature movie/tv show
-                    descriptions, actors & more. currently W.I.P
-                  </p>
+        <ul ref="el" class="featured__projectGrid">
+          <Transition>
+            <li v-show="isVisible" class="featured__project hidden">
+              <div class="project__content">
+                <div>
+                  <p class="project__overline">Featured Project</p>
+                  <h3 class="project__title">Netflix Clone</h3>
+                  <div class="project__description">
+                    <p>
+                      Clone based on Netflix ui, taking advantage of TMDB api,
+                      google firebase & react. soon to feature movie/tv show
+                      descriptions, actors & more. currently W.I.P
+                    </p>
 
-                </div>
-                <ul class="project__tech__list">
-                  <li>React</li>
-                  <li>Firebase</li>
-                  <li>TMDB API</li>
-                </ul>
-                <div class="project__links">
-                  <a href="https://github.com/Woolgar/netflix-clone" rel="noopener noreferrer" target="_blank">
-                    <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none"
-                      stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                      class="feather feather-github">
-                      <title>GitHub</title>
-                      <path
-                        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
-                      </path>
-                    </svg>
-                  </a>
-                  <a href="https://netflix-clone-7cad3.web.app/" rel="noopener noreferrer" target="_blank">
-                    <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none"
-                      stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                      class="feather feather-external-link">
-                      <title>External Link</title>
-                      <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                      <polyline points="15 3 21 3 21 9"></polyline>
-                      <line x1="10" y1="14" x2="21" y2="3"></line>
-                    </svg>
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div class="project__image">
-              <a href="https://netflix-clone-7cad3.web.app/" rel="noopener" target="_blank">
-                <div class="project__img__wrapper">
-                  <div style="max-width: 700px; display: block">
-                    <nuxt-img src="/Netflix.png" alt="Netflix logo" width="580" height="325"
-                      style="max-width: 100%; display: block; position: static"></nuxt-img>
+                  </div>
+                  <ul class="project__tech__list">
+                    <li>React</li>
+                    <li>Firebase</li>
+                    <li>TMDB API</li>
+                  </ul>
+                  <div class="project__links">
+                    <a href="https://github.com/Woolgar/netflix-clone" rel="noopener noreferrer" target="_blank">
+                      <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="feather feather-github">
+                        <title>GitHub</title>
+                        <path
+                          d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                        </path>
+                      </svg>
+                    </a>
+                    <a href="https://netflix-clone-7cad3.web.app/" rel="noopener noreferrer" target="_blank">
+                      <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="feather feather-external-link">
+                        <title>External Link</title>
+                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                        <polyline points="15 3 21 3 21 9"></polyline>
+                        <line x1="10" y1="14" x2="21" y2="3"></line>
+                      </svg>
+                    </a>
                   </div>
                 </div>
-              </a>
-            </div>
-          </li>
-          <!-- <li class="featured__project hidden">
-            <div class="project__content">
-              <div>
-                <p class="project__overline">Featured Project</p>
-                <h3 class="project__title">Covid 19 statistics</h3>
-                <div class="project__description">
-                  <p>
-                    Covid 19 statistics tracker using the world of meters API &
-                    Vanilla JS
-                  </p>
-
-                </div>
-                <ul class="project__tech__list">
-                  <li>JS</li>
-                  <li>SCSS</li>
-                  <li>API</li>
-                </ul>
-                <div class="project__links">
-                  <a href="hhttps://github.com/Woolgar/corona-statistics" rel="noopener noreferrer" target="_blank">
-                    <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none"
-                      stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                      class="feather feather-github">
-                      <title>GitHub</title>
-                      <path
-                        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
-                      </path>
-                    </svg>
-                  </a>
-                  <a href="https://corona.woolgar.dk/" rel="noopener noreferrer" target="_blank">
-                    <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none"
-                      stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                      class="feather feather-external-link">
-                      <title>External Link</title>
-                      <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                      <polyline points="15 3 21 3 21 9"></polyline>
-                      <line x1="10" y1="14" x2="21" y2="3"></line>
-                    </svg>
-                  </a>
-                </div>
               </div>
-            </div>
-            <div class="project__image">
-              <a href="https://corona.woolgar.dk/" rel="noopener" target="_blank">
-                <div class="project__img__wrapper">
-                  <div style="max-width: 700px; display: block">
-                    <img alt="" role="presentation" aria-hidden="true" src="assets/images/covid19.jpg"
-                      style="max-width: 100%; display: block; position: static" />
+              <div class="project__image">
+                <a href="https://netflix-clone-7cad3.web.app/" rel="noopener" target="_blank">
+                  <div class="project__img__wrapper">
+                    <div style="max-width: 700px; display: block">
+                      <nuxt-img src="/Netflix.png" alt="Netflix logo" width="580" height="325"
+                        style="max-width: 100%; display: block; position: static"></nuxt-img>
+                    </div>
                   </div>
-                </div>
-              </a>
-            </div>
-          </li> -->
+                </a>
+              </div>
+            </li>
+          </Transition>
           <li class="featured__project hidden">
             <div class="project__content">
               <div>
@@ -323,6 +273,9 @@ const currentYear = new Date().getFullYear();
 //   // to its contents immediately, but you can watch it.
 // })
 
+const el = ref(null);
+const isVisible = useElementVisibility(el);
+
 
 useHead({
   title: 'Web developer - Tobias Faucette',
@@ -380,41 +333,21 @@ useHead({
 //   };
 // })();
 
-// function isVisible(element) {
-//   let elementBox = element.getBoundingClientRect();
-//   let distanceFromTop = -200;
 
-//   if (elementBox.top - window.innerHeight < distanceFromTop) {
-//     return true;
-//   } else {
-//     return false;
-//   }
-// }
-// let numberOfScans = 1;
-// function scanDocument() {
-//   let sectionList = document.querySelectorAll(".hidden");
-//   sectionList.forEach(function (section) {
-//     if (isVisible(section)) {
-//       section.classList.remove("hidden");
-//     }
-//   });
-// }
-
-// document.addEventListener("scroll", throttle(scanDocument, 200));
-
-// function throttle(fn, wait) {
-//   var time = Date.now();
-//   return function () {
-//     if (time + wait - Date.now() < 0) {
-//       fn();
-//       time = Date.now();
-//     }
-//   };
-// }
 
 </script>
 
 <style lang="scss">
+.v-enter-active,
+.v-leave-active {
+  transition: opacity 0.5s ease-in;
+}
+
+.v-enter-from,
+.v-leave-to {
+  opacity: 0;
+}
+
 /* 
 Dark col:
 #1f1f1f
