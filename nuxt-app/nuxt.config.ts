@@ -8,6 +8,12 @@ export default defineNuxtConfig({
     "@nuxthq/studio",
     "@nuxt/image",
   ],
+
+  runtimeConfig: {
+    public: {
+      NUXT_PUBLIC_STUDIO_TOKENS: process.env.NUXT_PUBLIC_STUDIO_TOKENS,
+    },
+  },
   app: {
     head: {
       link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],
