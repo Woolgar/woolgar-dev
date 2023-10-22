@@ -6,16 +6,8 @@ Try to navigate to [/about](/about). These 2 pages are rendered by the `pages/[.
 
 
 ---
+title: Thisi s blog title
+description:  Thisi s blog description
 
-Look at the [Content documentation](https://content.nuxtjs.org/) to learn more.
+---
 
-
-
-
-POGGERS
-
-/
-
-/
-
-/
