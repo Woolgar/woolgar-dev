@@ -1,11 +1,18 @@
 <template>
   <div>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+    />
     <link rel="stylesheet" href="https://use.typekit.net/bly4ikw.css" />
     <header class="section" id="header">
       <nav class="nav">
         <div class="logo">
-          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 93 93">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            viewBox="0 0 93 93"
+          >
             <defs>
               <clipPath id="clip-path">
                 <rect class="cls-1" width="93" height="93" />
@@ -18,9 +25,10 @@
                     <g class="cls-2">
                       <circle class="cls-3" cx="46.5" cy="46.5" r="45" />
                     </g>
-                    <text class="cls-4" transform="translate(28 67.82) scale(1 1.14)">
-
-                    </text>
+                    <text
+                      class="cls-4"
+                      transform="translate(28 67.82) scale(1 1.14)"
+                    ></text>
                   </g>
                 </g>
               </g>
@@ -49,19 +57,34 @@
               coder by day, gamer by night.
             </h3>
             <div class="social-links">
-              <a href="https://github.com/Woolgar" aria-label="github" rel="noopener noreferrer" target="_blank">
+              <a
+                href="https://github.com/Woolgar"
+                aria-label="github"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
                 <i class="fab fa-github"></i>
               </a>
-              <a href="https://www.linkedin.com/in/tobias-faucette/" aria-label="Linkedin" rel="noopener noreferrer"
-                target="_blank">
+              <a
+                href="https://www.linkedin.com/in/tobias-faucette/"
+                aria-label="Linkedin"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
                 <i class="fab fa-linkedin-in"> </i>
               </a>
-              <a href="https://www.instagram.com/tobiasfaucette/" aria-label="instagram" rel="noopener noreferrer"
-                target="_blank">
+              <a
+                href="https://www.instagram.com/tobiasfaucette/"
+                aria-label="instagram"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
                 <i class="fab fa-instagram"> </i>
               </a>
             </div>
-            <a class="site__banner__content__btn" href="#projects">View projects</a>
+            <a class="site__banner__content__btn" href="#projects"
+              >View projects</a
+            >
           </div>
         </div>
       </section>
@@ -69,19 +92,32 @@
     <div class="side__element">
       <ul class="side__socials">
         <li>
-          <a href="https://github.com/Woolgar" aria-label="github" rel="noopener noreferrer" target="_blank">
+          <a
+            href="https://github.com/Woolgar"
+            aria-label="github"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
             <i class="fab fa-github"></i>
           </a>
         </li>
         <li>
-          <a href="https://www.linkedin.com/in/tobias-faucette/" aria-label="Linkedin" rel="noopener noreferrer"
-            target="_blank">
+          <a
+            href="https://www.linkedin.com/in/tobias-faucette/"
+            aria-label="Linkedin"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
             <i class="fab fa-linkedin-in"> </i>
           </a>
         </li>
         <li>
-          <a href="https://www.instagram.com/tobiasfaucette/" aria-label="instagram" rel="noopener noreferrer"
-            target="_blank">
+          <a
+            href="https://www.instagram.com/tobiasfaucette/"
+            aria-label="instagram"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
             <i class="fab fa-instagram"> </i>
           </a>
         </li>
@@ -91,8 +127,14 @@
     <section class="section" id="about">
       <div class="about__row hidden">
         <div class="about__image">
-          <nuxt-img src="/cv.jpg" alt="Tobias Faucette portrait" format="webp" width="150" height="150"
-            loading="lazy"></nuxt-img>
+          <NuxtImg
+            src="/cv.jpg"
+            alt="Tobias Faucette portrait"
+            format="webp"
+            width="150"
+            height="150"
+            loading="lazy"
+          ></NuxtImg>
         </div>
         <div class="about__content">
           <h2>About me</h2>
@@ -118,13 +160,11 @@
                 <br />
                 <span>+45 21 95 50 01</span>
                 <br />
-                <a class="mail-to" href="mailto:tobias@tobiasfaucette.com">tobias@tobiasfaucette.com</a>
+                <a class="mail-to" href="mailto:tobias@tobiasfaucette.com"
+                  >tobias@tobiasfaucette.com</a
+                >
               </p>
             </div>
-            <!-- <div class="about__resume">
-              <a href="assets/cv-.pdf" target="_blank" class="about__resume__btn">
-                <i class="fas fa-download"></i>Download Resume</a>
-            </div> -->
           </div>
         </div>
       </div>
@@ -145,7 +185,6 @@
                       google firebase & react. soon to feature movie/tv show
                       descriptions, actors & more. currently W.I.P
                     </p>
-
                   </div>
                   <ul class="project__tech__list">
                     <li>React</li>
@@ -153,22 +192,48 @@
                     <li>TMDB API</li>
                   </ul>
                   <div class="project__links">
-                    <a href="https://github.com/Woolgar/netflix-clone" rel="noopener noreferrer" target="_blank">
-                      <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none"
-                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                        class="feather feather-github">
+                    <a
+                      href="https://github.com/Woolgar/netflix-clone"
+                      rel="noopener noreferrer"
+                      target="_blank"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        role="img"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="feather feather-github"
+                      >
                         <title>GitHub</title>
                         <path
-                          d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
-                        </path>
+                          d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
+                        ></path>
                       </svg>
                     </a>
-                    <a href="https://netflix-clone-7cad3.web.app/" rel="noopener noreferrer" target="_blank">
-                      <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none"
-                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                        class="feather feather-external-link">
+                    <a
+                      href="https://netflix-clone-7cad3.web.app/"
+                      rel="noopener noreferrer"
+                      target="_blank"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        role="img"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="feather feather-external-link"
+                      >
                         <title>External Link</title>
-                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                        <path
+                          d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+                        ></path>
                         <polyline points="15 3 21 3 21 9"></polyline>
                         <line x1="10" y1="14" x2="21" y2="3"></line>
                       </svg>
@@ -177,11 +242,26 @@
                 </div>
               </div>
               <div class="project__image">
-                <a href="https://netflix-clone-7cad3.web.app/" rel="noopener" target="_blank">
+                <a
+                  href="https://netflix-clone-7cad3.web.app/"
+                  rel="noopener"
+                  target="_blank"
+                >
                   <div class="project__img__wrapper">
                     <div style="max-width: 700px; display: block">
-                      <nuxt-img src="/Netflix.png" alt="Netflix logo" width="580" height="325"
-                        style="max-width: 100%; display: block; position: static"></nuxt-img>
+                      <NuxtImg
+                        src="/Netflix.png"
+                        alt="Netflix logo"
+                        width="580"
+                        height="325"
+                        format="webp"
+                        loading="lazy"
+                        style="
+                          max-width: 100%;
+                          display: block;
+                          position: static;
+                        "
+                      ></NuxtImg>
                     </div>
                   </div>
                 </a>
@@ -198,9 +278,7 @@
                     Amazon UI clone by using react & state management to handle
                     customer journey, Stripe test API to allow test purchase.
                     Firebase with authentication for user creation and login
-
                   </p>
-
                 </div>
                 <ul class="project__tech__list">
                   <li>React</li>
@@ -208,22 +286,48 @@
                   <li>Stripe API</li>
                 </ul>
                 <div class="project__links">
-                  <a href="https://github.com/Woolgar/amazon-clone" rel="noopener noreferrer" target="_blank">
-                    <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none"
-                      stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                      class="feather feather-github">
+                  <a
+                    href="https://github.com/Woolgar/amazon-clone"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      role="img"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="feather feather-github"
+                    >
                       <title>GitHub</title>
                       <path
-                        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
-                      </path>
+                        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
+                      ></path>
                     </svg>
                   </a>
-                  <a href="https://fir-32983.web.app/" rel="noopener noreferrer" target="_blank">
-                    <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none"
-                      stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                      class="feather feather-external-link">
+                  <a
+                    href="https://fir-32983.web.app/"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      role="img"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="feather feather-external-link"
+                    >
                       <title>External Link</title>
-                      <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                      <path
+                        d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+                      ></path>
                       <polyline points="15 3 21 3 21 9"></polyline>
                       <line x1="10" y1="14" x2="21" y2="3"></line>
                     </svg>
@@ -232,12 +336,24 @@
               </div>
             </div>
             <div class="project__image">
-              <a href="https://fir-32983.web.app/" rel="noopener" target="_blank">
+              <a
+                href="https://fir-32983.web.app/"
+                rel="noopener"
+                target="_blank"
+              >
                 <div class="project__img__wrapper">
                   <div style="max-width: 700px; display: block">
-                    <nuxt-img src="/amazon.png" alt="amazon logo" width="580" height="325" role="presentation"
-                      style=" object-fit: cover; aspect-ratio: 16/ 9;">
-                    </nuxt-img>
+                    <NuxtImg
+                      src="/amazon.png"
+                      alt="amazon logo"
+                      width="580"
+                      height="325"
+                      format="webp"
+                      loading="lazy"
+                      role="presentation"
+                      style="object-fit: cover; aspect-ratio: 16/ 9"
+                    >
+                    </NuxtImg>
                   </div>
                 </div>
               </a>
@@ -259,11 +375,10 @@
       </div>
     </section>
     <Footer />
-
   </div>
 </template>
 <script setup>
-import Footer from '/components/Footer.vue'
+import Footer from "/components/Footer.vue";
 // const { getItems } = useDirectusItems();
 const currentYear = new Date().getFullYear();
 
@@ -276,17 +391,15 @@ const currentYear = new Date().getFullYear();
 const el = ref(null);
 const isVisible = useElementVisibility(el);
 
-
 useHead({
-  title: 'Web developer - Tobias Faucette',
+  title: "Web developer - Tobias Faucette",
   htmlAttrs: {
-    lang: 'en'
+    lang: "en",
   },
   meta: [
-    { name: 'description', content: 'Tobias Faucette web developer portfolio' }
-  ]
-})
-
+    { name: "description", content: "Tobias Faucette web developer portfolio" },
+  ],
+});
 
 // const posts = await getItems({ collection: "articles" });
 
@@ -332,9 +445,6 @@ useHead({
 //     }
 //   };
 // })();
-
-
-
 </script>
 
 <style lang="scss">
