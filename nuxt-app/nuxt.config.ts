@@ -1,13 +1,7 @@
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
 export default defineNuxtConfig({
   css: ["@/assets/main.scss"],
-  modules: [
-    "@nuxt/image-edge",
-    "@vueuse/nuxt",
-    "@nuxt/content",
-    "@nuxthq/studio",
-    "@nuxt/image",
-  ],
+  modules: ["@vueuse/nuxt", "@nuxt/content", "@nuxthq/studio", "@nuxt/image"],
 
   runtimeConfig: {
     public: {
@@ -21,5 +15,8 @@ export default defineNuxtConfig({
   },
   image: {
     provider: "netlify",
+    netlify: {
+      baseURl: process.env.IMAGES_URL,
+    },
   },
 });
