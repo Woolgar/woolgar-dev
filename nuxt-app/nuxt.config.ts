@@ -1,17 +1,19 @@
-
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
 export default defineNuxtConfig({
-	css: ["@/assets/main.scss"],
-	modules: ["nuxt-directus", '@nuxt/image-edge', '@vueuse/nuxt',],
-	app: {
-		head: {
-			link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
-		},
-	},
-	image: {
-		provider: 'netlify',
-	},
-	directus: {
-		url: "https://x6fsjrv2.directus.app",
-	},
-})
+  css: ["@/assets/main.scss"],
+  modules: [
+    "@nuxt/image-edge",
+    "@vueuse/nuxt",
+    "@nuxt/content",
+    "@nuxthq/studio",
+    "@nuxt/image",
+  ],
+  app: {
+    head: {
+      link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],
+    },
+  },
+  image: {
+    provider: "netlify",
+  },
+});
