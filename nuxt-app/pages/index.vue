@@ -127,14 +127,14 @@
     <section class="section" id="about">
       <div class="about__row hidden">
         <div class="about__image">
-          <NuxtImg
+          <nuxt-img
             src="/cv.jpg"
             alt="Tobias Faucette portrait"
             format="webp"
             width="150"
             height="150"
             loading="lazy"
-          ></NuxtImg>
+          ></nuxt-img>
         </div>
         <div class="about__content">
           <h2>About me</h2>
@@ -249,7 +249,7 @@
                 >
                   <div class="project__img__wrapper">
                     <div style="max-width: 700px; display: block">
-                      <NuxtImg
+                      <nuxt-img
                         src="/Netflix.png"
                         alt="Netflix logo"
                         width="580"
@@ -261,7 +261,7 @@
                           display: block;
                           position: static;
                         "
-                      ></NuxtImg>
+                      ></nuxt-img>
                     </div>
                   </div>
                 </a>
@@ -343,7 +343,7 @@
               >
                 <div class="project__img__wrapper">
                   <div style="max-width: 700px; display: block">
-                    <NuxtImg
+                    <nuxt-img
                       src="/amazon.png"
                       alt="amazon logo"
                       width="580"
@@ -353,7 +353,7 @@
                       role="presentation"
                       style="object-fit: cover; aspect-ratio: 16/ 9"
                     >
-                    </NuxtImg>
+                    </nuxt-img>
                   </div>
                 </div>
               </a>
@@ -379,14 +379,7 @@
 </template>
 <script setup>
 import Footer from "/components/Footer.vue";
-// const { getItems } = useDirectusItems();
 const currentYear = new Date().getFullYear();
-
-// const { pending, data: posts } = useLazyFetch(getItems({ collection: "articles" }))
-// watch(posts, (newPosts) => {
-//   // Because posts starts out null, you won't have access
-//   // to its contents immediately, but you can watch it.
-// })
 
 const el = ref(null);
 const isVisible = useElementVisibility(el);
@@ -400,51 +393,6 @@ useHead({
     { name: "description", content: "Tobias Faucette web developer portfolio" },
   ],
 });
-
-// const posts = await getItems({ collection: "articles" });
-
-// console.log(posts)
-
-// function menuToggle() {
-//   const navs = document.querySelector(".nav__items");
-//   navs.classList.toggle("nav__toggleShow");
-// }
-// document.querySelector(".nav__toggle").addEventListener("click", menuToggle);
-
-// const header = document.querySelector(".nav");
-
-// window.addEventListener("scroll", function menubg() {
-//   var top = window.scrollY;
-//   if (top >= 100) {
-//     header.classList.add("active");
-//   } else {
-//     header.classList.remove("active");
-//   }
-// });
-
-// (function () {
-//   var section = document.querySelectorAll(".section");
-//   var sections = {};
-//   var i = 0;
-
-//   Array.prototype.forEach.call(section, function (e) {
-//     sections[e.id] = e.offsetTop;
-//   });
-
-//   window.onscroll = function () {
-//     var scrollPosition =
-//       document.documentElement.scrollTop || document.body.scrollTop;
-
-//     for (i in sections) {
-//       if (sections[i] <= scrollPosition) {
-//         document.querySelector(".current").setAttribute("class", " ");
-//         document
-//           .querySelector("a[href*=" + i + "]")
-//           .setAttribute("class", "current");
-//       }
-//     }
-//   };
-// })();
 </script>
 
 <style lang="scss">
@@ -457,14 +405,4 @@ useHead({
 .v-leave-to {
   opacity: 0;
 }
-
-/* 
-Dark col:
-#1f1f1f
-
-#222222
-
- #30e0c5 
-
-*/
 </style>
