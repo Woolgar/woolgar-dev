@@ -1,4 +1,4 @@
-#Main dev portfolio
+# Main dev portfolio
 
 
-# Portfolio V2 built using Nuxt 3
+Portfolio V2 built using Nuxt 3
