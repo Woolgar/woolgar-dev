@@ -1,7 +1,7 @@
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
 export default defineNuxtConfig({
   css: ["@/assets/main.scss"],
-  modules: ["@vueuse/nuxt", "@nuxt/content", "@nuxthq/studio", "@nuxt/image"],
+  modules: ["@vueuse/nuxt", "@nuxt/content", "@nuxt/image"],
 
   runtimeConfig: { 
 
