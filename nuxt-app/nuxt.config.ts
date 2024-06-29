@@ -3,7 +3,7 @@ export default defineNuxtConfig({
   css: ["@/assets/main.scss"],
   modules: ["@vueuse/nuxt", "@nuxt/content", "@nuxthq/studio", "@nuxt/image"],
 
-  runtimeConfig: {
+  runtimeConfig: { 
     public: {
       NUXT_PUBLIC_STUDIO_TOKENS: process.env.NUXT_PUBLIC_STUDIO_TOKENS,
     },
@@ -11,12 +11,6 @@ export default defineNuxtConfig({
   app: {
     head: {
       link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],
-    },
-  },
-  image: {
-    provider: "netlify",
-    netlify: {
-      baseURl: process.env.IMAGES_URL,
     },
   },
 });
