@@ -126,15 +126,15 @@
 
     <section class="section" id="about">
       <div class="about__row hidden">
-        <div class="about__image">
-          <nuxt-img
+        <div class="about__image mb-5 lg:mb-0 flex justify-center lg:items-center">
+          <NuxtImg
             src="/cv.jpg"
-            alt="Tobias Faucette portrait"
+            alt="Tobias portrait"
             format="webp"
             width="150"
             height="150"
             loading="lazy"
-          ></nuxt-img>
+          ></NuxtImg>
         </div>
         <div class="about__content">
           <h2>About me</h2>
@@ -150,22 +150,6 @@
             My main focus is creating a good experience for both clients and
             users alike
           </p>
-          <div class="about__row">
-            <div class="about__contact">
-              <h2>Contact Details</h2>
-              <p class="about__address">
-                <span>Tobias Faucette</span>
-                <br />
-                <span>9000 Aalborg, Denmark</span>
-                <br />
-                <span>+45 21 95 50 01</span>
-                <br />
-                <a class="mail-to" href="mailto:tobias@tobiasfaucette.com"
-                  >tobias@tobiasfaucette.com</a
-                >
-              </p>
-            </div>
-          </div>
         </div>
       </div>
     </section>
@@ -173,8 +157,7 @@
       <div class="section__wrapper">
         <h2 class="section__heading">Things I'm building</h2>
         <ul ref="el" class="featured__projectGrid">
-          <Transition>
-            <li v-show="isVisible" class="featured__project hidden">
+            <li  class="featured__project hidden">
               <div class="project__content">
                 <div>
                   <p class="project__overline">Featured Project</p>
@@ -249,7 +232,7 @@
                 >
                   <div class="project__img__wrapper">
                     <div style="max-width: 700px; display: block">
-                      <nuxt-img
+                      <NuxtImg
                         src="/Netflix.png"
                         alt="Netflix logo"
                         width="580"
@@ -261,13 +244,12 @@
                           display: block;
                           position: static;
                         "
-                      ></nuxt-img>
+                      ></NuxtImg>
                     </div>
                   </div>
                 </a>
               </div>
             </li>
-          </Transition>
           <li class="featured__project hidden">
             <div class="project__content">
               <div>
@@ -343,7 +325,7 @@
               >
                 <div class="project__img__wrapper">
                   <div style="max-width: 700px; display: block">
-                    <nuxt-img
+                    <NuxtImg
                       src="/amazon.png"
                       alt="amazon logo"
                       width="580"
@@ -353,7 +335,7 @@
                       role="presentation"
                       style="object-fit: cover; aspect-ratio: 16/ 9"
                     >
-                    </nuxt-img>
+                    </NuxtImg>
                   </div>
                 </div>
               </a>
@@ -384,15 +366,15 @@ const currentYear = new Date().getFullYear();
 const el = ref(null);
 const isVisible = useElementVisibility(el);
 
-useHead({
-  title: "Web developer - Tobias Faucette",
-  htmlAttrs: {
-    lang: "en",
-  },
-  meta: [
-    { name: "description", content: "Tobias Faucette web developer portfolio" },
-  ],
-});
+// useHead({
+//   title: "Web developer - Tobias Faucette",
+//   htmlAttrs: {
+//     lang: "en",
+//   },
+//   meta: [
+//     { name: "description", content: "Tobias Faucette web developer portfolio" },
+//   ],
+// });
 </script>
 
 <style lang="scss">

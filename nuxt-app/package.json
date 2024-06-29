@@ -7,14 +7,18 @@
     "preview": "nuxt preview"
   },
   "devDependencies": {
-    "@nuxt/image": "^1.0.0",
-    "nuxt": "^3.9.0"
+    "@nuxt/fonts": "^0.7.1",
+    "@nuxt/image": "^1.7.0",
+    "@nuxtjs/seo": "^2.0.0-rc.11",
+    "@nuxtjs/tailwindcss": "^6.12.0",
+    "nuxt": "^3.12.2"
   },
   "dependencies": {
     "@nuxt/content": "^2.8.5",
     "@vueuse/core": "^10.7.1",
     "@vueuse/nuxt": "^10.7.1",
     "bootstrap": "^5.2.0",
+    "prettier": "^3.3.2",
     "sass": "^1.54.4",
     "yarn": "^1.22.19"
   }
