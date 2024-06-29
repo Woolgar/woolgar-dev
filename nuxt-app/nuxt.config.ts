@@ -4,9 +4,7 @@ export default defineNuxtConfig({
   modules: ["@vueuse/nuxt", "@nuxt/content", "@nuxthq/studio", "@nuxt/image"],
 
   runtimeConfig: { 
-    public: {
-      NUXT_PUBLIC_STUDIO_TOKENS: process.env.NUXT_PUBLIC_STUDIO_TOKENS,
-    },
+
   },
   app: {
     head: {
