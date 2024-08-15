@@ -1,7 +1,7 @@
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
 export default defineNuxtConfig({
   css: ["@/assets/main.scss"],
-  // devtools: { enabled: true },
+  devtools: { enabled: true },
 
   modules: [
     "@vueuse/nuxt",
@@ -9,8 +9,25 @@ export default defineNuxtConfig({
     "@nuxt/image",
     "@nuxtjs/seo",
     "@nuxtjs/tailwindcss",
-    "@nuxt/fonts"
+    "@nuxt/fonts",
+    "nuxt-security"
   ],
+
+  vite: {
+    server: {
+      hmr: {
+        protocol: 'ws',
+        host: 'localhost',
+      },
+    },
+  },
+
+  // Allow nuxt security to work with devtools
+  security: {
+    headers: {
+      crossOriginEmbedderPolicy: process.env.NODE_ENV === 'development' ? 'unsafe-none' : 'require-corp',
+    },
+  },
   site: {
     url: 'https://woolgar.dev',
     name: '',
