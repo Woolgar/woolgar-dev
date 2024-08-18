@@ -2,7 +2,8 @@
   <NuxtPage />
 </template>
 
-<script>
+<script setup lang="ts">
+
   onNuxtReady(() => {
     useHead({
       script: [
@@ -11,8 +12,7 @@
           src: 'https://plausible-kk8cscg0c0cgcgw8wgoc0sck.woolgar.dev/js/script.js',
           type: 'text/javascript',
           tagPosition: 'bodyClose',
-          dataDomain: 'woolgar.dev',
-          defer:true,
+          defer: true,
         },
       ],
     });
