@@ -157,6 +157,97 @@
       <div class="section__wrapper">
         <h2 class="section__heading">Things I'm building</h2>
         <ul ref="el" class="featured__projectGrid">
+          <li  class="featured__project hidden">
+              <div class="project__content">
+                <div>
+                  <p class="project__overline">Featured Project</p>
+                  <h3 class="project__title">Photography portfolio</h3>
+                  <div class="project__description">
+                    <p>
+                    Photography portfolio remade with Nuxt.js, Tailwind CSS, and Directus as a headless CMS.
+                    </p>
+                  </div>
+                  <ul class="project__tech__list">
+                    <li>Nuxt</li>
+                    <li>Directus</li>
+                    <li>TailwindCSS</li>
+                  </ul>
+                  <div class="project__links">
+                    <a
+                      href="https://github.com/Woolgar/netflix-clone"
+                      rel="noopener noreferrer"
+                      target="_blank"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        role="img"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="feather feather-github"
+                      >
+                        <title>GitHub</title>
+                        <path
+                          d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
+                        ></path>
+                      </svg>
+                    </a>
+                    <a
+                      href="https://netflix-clone-7cad3.web.app/"
+                      rel="noopener noreferrer"
+                      target="_blank"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        role="img"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="feather feather-external-link"
+                      >
+                        <title>External Link</title>
+                        <path
+                          d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+                        ></path>
+                        <polyline points="15 3 21 3 21 9"></polyline>
+                        <line x1="10" y1="14" x2="21" y2="3"></line>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="project__image">
+                <NuxtLink
+                  to="https://tobiasfaucette.com/"
+                  rel="noopener"
+                  target="_blank"
+                >
+                  <div class="project__img__wrapper">
+                    <div style="max-width: 700px; display: block">
+                      <NuxtImg
+                        src="/tobiasfaucette.com.png"
+                        alt="Netflix logo"
+                        width="580"
+                        height="325"
+                        format="webp"
+                        loading="lazy"
+                        style="
+                          max-width: 100%;
+                          display: block;
+                          position: static;
+                        "
+                      ></NuxtImg>
+                    </div>
+                  </div>
+                </NuxtLink>
+              </div>
+            </li>
             <li  class="featured__project hidden">
               <div class="project__content">
                 <div>
@@ -318,8 +409,8 @@
               </div>
             </div>
             <div class="project__image">
-              <a
-                href="https://fir-32983.web.app/"
+              <NuxtLink
+                to="https://fir-32983.web.app/"
                 rel="noopener"
                 target="_blank"
               >
@@ -338,7 +429,7 @@
                     </NuxtImg>
                   </div>
                 </div>
-              </a>
+              </NuxtLink>
             </div>
           </li>
         </ul>

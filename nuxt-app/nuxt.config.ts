@@ -29,15 +29,19 @@ export default defineNuxtConfig({
       crossOriginEmbedderPolicy: process.env.NODE_ENV === 'development' ? 'unsafe-none' : 'require-corp',
     },
   },
+
   site: {
     url: 'https://woolgar.dev',
     name: '',
     description: 'Welcome to my little corner of the internet',
     defaultLocale: 'en', // not needed if you have @nuxtjs/i18n installed
   },
+
   app: {
     head: {
       link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],
     },
   },
+
+  compatibilityDate: "2024-09-02",
 });

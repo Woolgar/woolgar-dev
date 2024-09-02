@@ -620,7 +620,7 @@ footer {
   margin: 0px 0px 5px 20px;
 }
 
-.featured__project:nth-last-of-type(2n + 1) .project__tech__list {
+.featured__project:nth-last-of-type(2n ) .project__tech__list {
   -webkit-box-pack: start;
   justify-content: flex-start;
 }
