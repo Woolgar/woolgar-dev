@@ -210,7 +210,7 @@
                     <div style="max-width: 700px; display: block">
                       <NuxtImg
                         src="/tobiasfaucette.com.png"
-                        alt="Netflix logo"
+                        alt="Tobiasfaucette website screenshot"
                         width="580"
                         height="325"
                         format="webp"
