@@ -32,7 +32,7 @@ export default defineNuxtConfig({
 
   site: {
     url: 'https://woolgar.dev',
-    name: '',
+    name: 'Tobias - web developer',
     description: 'Welcome to my little corner of the internet',
     defaultLocale: 'en', // not needed if you have @nuxtjs/i18n installed
   },

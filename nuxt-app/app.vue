@@ -4,17 +4,18 @@
 
 <script setup lang="ts">
 
-  // onNuxtReady(() => {
-  //   useHead({
-  //     script: [
-  //       {
-  //         id: 'plausible',
-  //         src: 'https://plausible-kk8cscg0c0cgcgw8wgoc0sck.woolgar.dev/js/script.js',
-  //         type: 'text/javascript',
-  //         tagPosition: 'bodyClose',
-  //         defer: true,
-  //       },
-  //     ],
-  //   });
-  // });
+  onNuxtReady(() => {
+    useHead({
+      script: [
+        {
+          id: 'plausible',
+          src: 'https://analytics.tobiasfaucette.com/js/script.js',
+          type: 'text/javascript',
+          tagPosition: 'bodyClose',
+          defer: true,
+          'data-domain': 'woolgar.dev'
+        },
+      ],
+    });
+  });
 </script>
